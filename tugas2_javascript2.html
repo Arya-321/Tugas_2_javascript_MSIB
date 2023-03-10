@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue; font-family: fantasy;">
+    <script>
+         //Variable Declaration
+         let pegawai = "Ahmat Zulaibib";
+        let jabatan = "Staff";
+        let status = "Menikah"
+        let jumlah_gaji = "";
+
+
+        //Control Structure
+     if(jabatan == "Manager"){
+        jumlah_gaji =  10000000;
+        }
+     else if(jabatan == "Asisten Manager"){
+        jumlah_gaji = 8000000
+        }
+     else if(jabatan == "Staff"){
+        jumlah_gaji = 5000000
+        }
+     else if(jabatan == "Cleaning Service"){
+        jumlah_gaji = 2500000
+        }
+
+        // Add Variable
+        let tunjangan = 0.1 * jumlah_gaji;
+        let bpjs = 0.1 * jumlah_gaji;
+    
+        let t_keluarga = "";
+        if(status == "Menikah") t_keluarga = 0.1 * jumlah_gaji;
+        else t_keluarga = 0;
+    
+        let total_jumlah_gaji = jumlah_gaji + tunjangan + bpjs + t_keluarga
+
+        document.write("Data Pegawai<hr/>" +
+        "Nama Pegawai : " + pegawai +
+        "<br> Jabatan : " + jabatan +
+        "<br> Status : " + status +
+        "<br> Gaji pokok : " + "Rp" + jumlah_gaji +
+        "<br> Tunjangan Jabatan : " + tunjangan +
+        "<br> BPJS : " + bpjs +
+        "<br>Tunjangan Keluarga : " + t_keluarga +
+        "<br>Total keseluruhan gaji : " + total_jumlah_gaji)
+    </script>
+    
+</body>
+</html>
